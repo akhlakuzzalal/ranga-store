@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FakeStore</title>
+
   <!-- default Css Style  -->
   <link rel="stylesheet" href="./css/style.css" />
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
@@ -22,17 +24,21 @@
 <body>
   <header></header>
   <main class="main">
+    <!-- search box -->
     <div class="search-box">
       <input id="input-field" class="search-field" type="text" />
       <button type="button" class="btn btn-primary search-button" id="search-btn" onclick="loadProducts()">
         Search
       </button>
     </div>
+    <!-- cart and product container -->
     <div class="row">
+      <!-- product container -->
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
         </div>
       </div>
+      <!-- cart container -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
           <table class="table">
@@ -82,6 +88,7 @@
           </div>
         </div>
       </div>
+      <!-- product details -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div id="detail-container" class="product-details">
           <h1>Product Details</h1>

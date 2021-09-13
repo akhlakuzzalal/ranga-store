@@ -41,7 +41,7 @@ const addToCart = (id, price) => {
   document.getElementById("total-Products").innerText = count;
   updateTotal();
 };
-
+// get input value
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
@@ -85,7 +85,7 @@ const updateTotal = () => {
     getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
-
+// show rating funtion for each product
 const ratings = rate => {
   if (rate <= 1) {
     return `</i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
@@ -102,18 +102,19 @@ const ratings = rate => {
   if (rate <= 5) {
     return `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>`
   }
-}
+};
+
+// Show details function for clicking in details button
 const showDetail = (title, description, img) => {
   const detailContainer = document.getElementById('detail-container');
   detailContainer.innerHTML = `<h1>Product Details</h1>`;
   const div = document.createElement('div');
   div.innerHTML = `
-          <div class="detail-title">
-          <h3 class="rating-star">${title}</h3>
-          <img class="product-image-detail" src=${img}>
-          </div>
-        
-          <p>${description}</p>
+        <div class="detail-title">
+        <h3 class="rating-star">${title}</h3>
+        <img class="product-image-detail" src=${img}>
+        </div>
+        <p>${description}</p>
   `;
   detailContainer.appendChild(div);
   return detailContainer;
