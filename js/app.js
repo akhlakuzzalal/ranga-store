@@ -87,19 +87,19 @@ const updateTotal = () => {
 };
 // show rating funtion for each product
 const ratings = rate => {
-  if (rate <= 1) {
+  if (Math.round(rate) <= 1) {
     return `</i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
   }
-  if (rate <= 2) {
+  if (Math.round(rate) <= 2) {
     return `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
   }
-  if (rate <= 3) {
+  if (Math.round(rate) <= 3) {
     return `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`
   }
-  if (rate <= 4) {
+  if (Math.round(rate) <= 4) {
     return `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>`
   }
-  if (rate <= 5) {
+  if (Math.round(rate) <= 5) {
     return `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>`
   }
 };
