@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FakeStore</title>
+  <!-- default Css Style  -->
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -15,24 +16,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
   <header></header>
   <main class="main">
-    <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
-      </div>
+    <div class="search-box">
+      <input id="input-field" class="search-field" type="text" />
+      <button type="button" class="btn btn-primary search-button" id="search-btn" onclick="loadProducts()">
+        Search
+      </button>
     </div>
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
-          <h1></h1>
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
@@ -50,7 +48,7 @@
             <tbody>
               <tr>
                 <th>Total Added-Products:</th>
-                <td>$ <span id="total-Products">0</span></td>
+                <td> <span id="total-Products">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
@@ -84,12 +82,22 @@
           </div>
         </div>
       </div>
+      <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
+        <div id="detail-container" class="product-details">
+          <h1>Product Details</h1>
+
+        </div>
+      </div>>
+    </div>
     </div>
   </main>
   <footer></footer>
 
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>
+
+  <!-- font awesome kit -->
+  <script src="https://kit.fontawesome.com/e0d19b461a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
