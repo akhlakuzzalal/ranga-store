@@ -2,6 +2,30 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+.header-container{
+  background-image: linear-gradient(rgba(255, 99, 71, 0.87), rgba(255, 166, 0, 0.836));
+}
+.flex{
+  display: flex;
+}
+.content-between{
+  justify-content: space-around;
+}
+.align-center{
+  align-items: center;
+}
+.align-center>h3{
+  margin-left: 10px;
+}
+.nav>p{
+  margin: 0;
+  color: white;
+ margin-right: 12px;
+ cursor: pointer;
+}
+.nav>p:hover{
+  color: rgb(165, 46, 102);
+}
 #pname{
   width: 100%;
   padding: 12px 20px;
@@ -28,7 +52,7 @@ body {
  justify-content: space-evenly;
  width: 500px;
  margin: auto;
- margin-top: 50px;
+ margin-top: 10px;
  margin-bottom: 30px;
 }
 .search-button {
@@ -38,7 +62,7 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   color: white;
-  background-color: #f57224;
+  background-image: linear-gradient(tomato,orange);
 }
 #all-products {
   display: grid;
@@ -55,6 +79,7 @@ body {
   padding: 10px;
   box-shadow: 4px 4px 7px gray;
   transition: 0.6s;
+  height: 460px;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px rgb(77, 74, 74);
@@ -97,7 +122,7 @@ body {
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
-  margin-top: 370px;
+  margin-top: 350px;
   margin-right: 30px;
   position: fixed;
   overflow: scroll;
